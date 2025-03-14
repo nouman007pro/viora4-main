@@ -90,6 +90,39 @@
 
         <!-- (Next Layout) -->
         <style>
+             @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            .row {
+                flex-direction: column;
+                align-items: center;
+            }
+            .col-md-3, .col-md-6 {
+                width: 100%;
+                text-align: center;
+            }
+            .main-news {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+            .news-image {
+                border: none;
+            }
+            .news-content {
+                margin-left: 0;
+                padding: 10px;
+            }
+            .news-content p {
+                margin-left: 0;
+                margin-right: 0;
+                font-size: 12px;
+            }
+            .news-content .time {
+                margin-left: 0;
+            }
+       
            .logo span{
                    font-size: 77px;
                    color: #c00;
