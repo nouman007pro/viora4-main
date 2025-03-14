@@ -10,8 +10,8 @@
 </head>
 <body>
 
-    <!-- Main Navigation -->
-    <nav class="main-nav">
+    <!-- maincolumn Navigation -->
+    <nav class="maincolumn-nav">
         <div class="nav-container">
             <ul class="nav-links">
                 <li class="active"><a href="#">News</a></li>
@@ -45,21 +45,21 @@
     </nav>
 
     <div class="container mt-4">
-        <div class="row">
+        <div class="column">
             <!-- Left Side (Headlines) -->
             <div class="col-md-3">
                 <h1>Headlines</h1>
             </div>
 
-            <!-- Main News Section -->
-            <div class="col-md-6 main-news">
-                <div class="news-content">
+            <!-- maincolumn News Section -->
+            <div class="col-md-6 maincolumn-news">
+                <div class="hotcontent">
                     <span class=""></span>
                    
                    <strong> <p>Russian president makes threats in first visit since Ukrainian incursion as world waits for Kremlin's reaction to ceasefire proposal.</p></strong>
                     <span class="time">54m ago</span>
                 </div>
-                <div class="news-image">
+                <div class="hotnews">
                     <img src="images/Screenshot 2025-03-13 015233.png" alt="Putin" class="img-fluid">
                 </div>
             </div>
@@ -75,7 +75,7 @@
         </div>
 
         <!-- Bottom News Section -->
-        <div class="row bottom-news mt-3">
+        <div class="column bottom-news mt-3">
             <div class="col-md-4">
                 <h5><span class="full-report">Full report</span> Trump hints at financial repercussions if Russia rejects Ukraine ceasefire</h5>
             </div>
@@ -90,39 +90,7 @@
 
         <!-- (Next Layout) -->
         <style>
-             @media (max-width: 600px) {
-            .container {
-                padding: 10px;
-            }
-            .row {
-                flex-direction: column;
-                align-items: center;
-            }
-            .col-md-3, .col-md-6 {
-                width: 100%;
-                text-align: center;
-            }
-            .main-news {
-                flex-direction: column;
-                gap: 10px;
-                text-align: center;
-            }
-            .news-image {
-                border: none;
-            }
-            .news-content {
-                margin-left: 0;
-                padding: 10px;
-            }
-            .news-content p {
-                margin-left: 0;
-                margin-right: 0;
-                font-size: 12px;
-            }
-            .news-content .time {
-                margin-left: 0;
-            }
-       
+          
            .logo span{
                    font-size: 77px;
                    color: #c00;
@@ -221,7 +189,7 @@
 
         }
 
-        .badmain {
+        .badmaincolumn {
             display: grid;
             gap: 20px;
             max-width: 1200px;
@@ -231,7 +199,7 @@
             border-top: 1px solid lightgray;
             border-right: 1px solid lightgray;      }
        
-        .badmain img{
+        .badmaincolumn img{
             border: 1px solid #ddd;
             border-radius: 4px;
             padding: 5px;
@@ -244,7 +212,7 @@
             
 
         }
-        .goodmain img, .sidegood img {
+        .goodmaincolumn img, .sidegood img {
             width: 60%;
             height: auto;
             display: block;
@@ -253,12 +221,12 @@
 
             margin-bottom: 10px;
         }
-        .goodmain h4, .sidegood h4, .badmain h4 {
+        .goodmaincolumn h4, .sidegood h4, .badmaincolumn h4 {
             font-size: 14px;
             color: #333;
             margin: 10px 0;
         }
-        .goodmain p, .sidegood p, .badmain p {
+        .goodmaincolumn p, .sidegood p, .badmaincolumn p {
             font-size: 16px;
             color: #043a53;
             margin: 5px 0;
@@ -274,7 +242,7 @@
             font-weight: bold;
             color: rgb(17, 0, 255);
         }
-        .badmain {
+        .badmaincolumn {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap:0px;
@@ -288,7 +256,7 @@
     </style>
 </head>
     <div class="badnewss">
-        <div class="goodmain">
+        <div class="goodmaincolumn">
             <img src="images/2.png" alt="Trump Economic Strategy">
 <p class="cat">Opinion</p>
             <h4>It’s ‘Maganomics’: Trump’s brash economic strategy is likely to end in crash or crisis</h4>
@@ -301,7 +269,7 @@
             <p>Lloyd Green</p>
         </div>
     </div>
-    <div class="badmain">
+    <div class="badmaincolumn">
         <div>
             <img src="images/4.png" alt="US Europe Relations">
             <p class="cat">VIORA4 View</p>
@@ -659,7 +627,7 @@
             font-family: Arial, sans-serif;
             margin: 20px;
         }
-        .container {
+        maincolumncol {
             max-width: 1200px;
             margin: auto;
             padding: 30px;
@@ -676,18 +644,18 @@
             gap: 20px;
             margin-left: 20%;
         }
-        .main-SPORTSPAGE {
+        .maincolumn-SPORTSPAGE {
             display: flex;
             gap: 20px;
             border-bottom: 1px solid lightgray;
             border-right: 1px solid lightgray;
         }
-        .main-SPORTSPAGE img {
+        .maincolumn-SPORTSPAGE img {
             width: 380px;
             height: 300px;
             object-fit: cover;
         }
-        .main-SPORTSPAGE-content h4 {
+        .maincolumn-SPORTSPAGE-content h4 {
             font-size: 22px;
             margin: 10px 0;
             border-right: 1px solid rgb(194, 8, 8);
@@ -727,7 +695,7 @@
             font-size: 14px;
         }
         @media (max-width: 600px) {
-            .container {
+            maincolumncol {
                 width: 100%;
                 padding: 10px;
             }
@@ -737,11 +705,11 @@
                 gap: 15px;
                 margin-left: 0;
             }
-            .main-SPORTSPAGE {
+            .maincolumn-SPORTSPAGE {
                 flex-direction: column;
                 align-items: center;
             }
-            .main-SPORTSPAGE img {
+            .maincolumn-SPORTSPAGE img {
                 width: 100%;
                 height: auto;
             }
@@ -760,9 +728,9 @@
     <div class="container">
         <h1>Sport</h1>
         <div class="SPORTSPAGE-layout">
-            <div class="main-SPORTSPAGE">
-                <img src="images/30.png" alt="Main SPORTSPAGE">
-                <div class="main-SPORTSPAGE-content">
+            <div class="maincolumn-SPORTSPAGE">
+                <img src="images/30.png" alt="maincolumn SPORTSPAGE">
+                <div class="maincolumn-SPORTSPAGE-content">
                     <p class="SPORTSCAT">Football</p>
                     <h4>Asensio double sinks 10-man Brugge as Aston Villa bulldoze into last eight</h4>
                     <p>After Kyriani Sabbe’s sending-off 16 minutes in, goals for Marco Asensio gave Aston Villa a 3-0 win over Club Brugge...</p>
@@ -1037,7 +1005,7 @@
                 font-size: 24px;
                 font-weight: bold;
             }
-            .container {
+            maincolumncol {
                 display: flex;
                 gap: 20px;
                 align-items: flex-start;
@@ -1071,7 +1039,7 @@
                 color: gray;
             }
             @media (max-width: 768px) {
-                .container {
+                maincolumncol {
                     flex-direction: column;
                     gap: 15px;
                 }
@@ -1081,7 +1049,7 @@
                 }
             }
             @media (max-width: 600px) {
-                .container {
+                maincolumncol {
                     flex-direction: column;
                     gap: 10px;
                 }
@@ -1257,7 +1225,40 @@
   // JavaScript for interactivity (if needed)
   console.log("Website loaded successfully!");
 </script>
-      <!-- Up Arrow -->
+      <!-- Up Arcolumn -->
+        <style>   @media (max-width: 600px) {
+            .maincolumncol {
+                padding: 10px;
+            }
+            .column {
+                flex-direction: column;
+                align-items: center;
+            }
+            .col-md-3, .col-md-6 {
+                width: 100%;
+                text-align: center;
+            }
+            .maincolumn-news {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+            .hotnews {
+                border: none;
+            }
+            .hotcontent {
+                margin-left: 0;
+                padding: 10px;
+            }
+            .hotcontent p {
+                margin-left: 0;
+                margin-right: 0;
+                font-size: 12px;
+            }
+            .hotcontent .time {
+                margin-left: 0;
+            }
+       </style>
     </footer>
   
 </body>
