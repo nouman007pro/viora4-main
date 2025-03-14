@@ -23,39 +23,7 @@
         max-width: 1200px;
         
     }
-     @media (max-width: 600px) {
-            .container {
-                padding: 10px;
-            }
-            .row {
-                flex-direction: column;
-                align-items: center;
-            }
-            .col-md-3, .col-md-6 {
-                width: 100%;
-                text-align: center;
-            }
-            .main-news {
-                flex-direction: column;
-                gap: 10px;
-                text-align: center;
-            }
-            .news-image {
-                border: none;
-            }
-            .news-content {
-                margin-left: 0;
-                padding: 10px;
-            }
-            .news-content p {
-                margin-left: 0;
-                margin-right: 0;
-                font-size: 12px;
-            }
-            .news-content .time {
-                margin-left: 0;
-            }
-       
+    
     /* Navigation Links */
     .nav-links {
         list-style: none;
@@ -103,81 +71,6 @@
         color: white;
         cursor: pointer;
     }
-@media (max-width: 786px) {
-    /* Navbar adjustments */
-    .main-nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        padding: 10px 0;
-    }
-
-    .menu-toggle {
-        display: block;
-        margin-top: 10px;
-    }
-
-    /* Headline and main news */
-    .container .row {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .col-md-3, .col-md-6 {
-        width: 100%;
-        text-align: center;
-    }
-
-    /* Adjust images for mobile */
-    .news-image img, .side-news img {
-        width: 100%;
-        height: auto;
-    }
-
-    /* Second Layout (Good/Bad News Section) */
-    .second {
-        grid-template-columns: 1fr;
-        padding: 10px;
-    }
-
-    .goodbadnews img, .badnews img {
-        width: 100%;
-        height: auto;
-    }
-
-    .badnews {
-        text-align: center;
-    }
-
-    /* Bottom News Section */
-    .bottom-news {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .bottom-news h5 {
-        margin-bottom: 10px;
-    }
-
-    /* Bad News Section */
-    .badnewss, .badmain {
-        grid-template-columns: 1fr;
-    }
-
-    .badmain img {
-        width: 80px;
-        height: 80px;
-    }
-}
-
     
     /* ======= SUB NAVIGATION ======= */
     .sub-nav {
@@ -263,12 +156,39 @@
         font-size: 24px;
     
     }
+   @media (max-width: 600px){
+    .main-news{
+        flex-direction: column;
+        gap: 10px; }
     
+    }
+    .news-content {
+    }
+    
+    .live-label {
+        background: rgb(247, 4, 4);
+        color: white;
+        font-size: 12px;
+        border-radius: 5px;
+        display: inline-block;
+        margin-bottom: 5px;
+
+    }
+
+    
+    .news-content h3 {
+        font-size: 1px;
+        font-weight: bold;
+        margin-bottom: 1px;text-align: center;
+
+    }
+    
+
+   
     /* Main News Section */
     .main-news {
-        display: flex;
-        gap: 15px;
-    }
+        max-width: 100%; /* Full width on very small screens */
+        flex: 1 1 100%;  }
     .news-image{
         border-left:1px solid lightgray ;
         border-right:1px solid lightgray ;
@@ -372,4 +292,56 @@
         font-weight: bold;
 
     }
+    .culture {
+
+        flex-direction: column;
+        gap: 10px;  
+
+    }.culture h1{
+        max-width: 100%; /* Full width on very small screens */
+        flex: 1 1 100%
+    }
+    
+    .culturenews {
+        max-width: 100%; /* Full width on very small screens */
+        flex: 1 1 100%
+
+
+    }
+    .culturenews img {
+        
+        flex-direction: column;
+        gap: 10px;
+       }
+    .news-grid {
+        flex-direction: column;
+                gap: 10px;
+
+    }
+    .cultureitem img{
+        flex-direction: column;
+        gap: 10px;
+        
+        
+    }
+    
+.cultureitem h4 {
+    max-width: 100%; /* Full width on very small screens */
+    flex: 1 1 100%;
+        
+        
+    }
+    p {
+        max-width: 100%; /* Full width on very small screens */
+        flex: 1 1 100%;
+
+
+    }
+    .culturecategory {
+        font-weight: bold;
+        color: #c00;
+        text-transform: uppercase;
+
+    }
+    
    
