@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardian-Style Navbar</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li class="active"><a href="#">News</a></li>
+                <li><a href="#">Opinion</a></li>
+                <li><a href="#sport">Sport</a></li>
+                <li><a href="#">Culture</a></li>
+                <li><a href="#">Lifestyle</a></li>
+            </ul>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <div class="logo">Viora<span>4</span></div>
+        </div>
+    </nav>
+
+    <!-- Sub Navigation -->
+    <nav class="sub-nav">
+        <ul>
+            <li><a href="#">World</a></li>
+            <li><a href="#">US Politics</a></li>
+            <li><a href="#">UK</a></li>
+            <li><a href="#">Climate Crisis</a></li>
+            <li><a href="#">Middle East</a></li>
+            <li><a href="#">Ukraine</a></li>
+            <li><a href="#">Environment</a></li>
+            <li><a href="#">Science</a></li>
+            <li><a href="#">Global Development</a></li>
+            <li><a href="#">Football</a></li>
+            <li><a href="#">Tech</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Obituaries</a></li>
+        </ul>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Left Side (Headlines) -->
+            <div class="col-md-3">
+                <h1>Headlines</h1>
+            </div>
+
+            <!-- Main News Section -->
+            <div class="col-md-6 main-news">
+                <div class="news-content">
+                    <span class=""></span>
+                   
+                   <strong> <p>Russian president makes threats in first visit since Ukrainian incursion as world waits for Kremlin's reaction to ceasefire proposal.</p></strong>
+                    <span class="time">54m ago</span>
+                </div>
+                <div class="news-image">
+                    <img src="C:\Users\lenovo\Documents\viora4\blogs\images\Screenshot 2025-03-13 015233.png" alt="Putin" class="img-fluid">
+                </div>
+            </div>
+
+            <!-- Right Side (Additional News) -->
+    
+            <div class="col-md-3 side-news">
+                <img src="C:\Users\lenovo\Documents\viora4\blogs\images\Screenshot 2025-03-13 063136.png" alt="Pollution" class="img-fluid">
+                <span class="category">Climate crisis</span>
+                <h4>US officials reconsider greenhouse gas harm amid slew of environmental rollbacks</h4>
+                <span class="time">1h ago</span>
+            </div>
+        </div>
+
+        <!-- Bottom News Section -->
+        <div class="row bottom-news mt-3">
+            <div class="col-md-4">
+                <h5><span class="full-report">Full report</span> Trump hints at financial repercussions if Russia rejects Ukraine ceasefire</h5>
+            </div>
+            <div class="col-md-4">
+                <h5><span class="analysis">Analysis</span> Cautious Zelensky keeps cards close to his chest after Ukraine ceasefire proposal</h5>
+            </div>
+            <div class="col-md-4">
+                <h5><span class="explainer">Explainer</span> Ukraine ceasefire: what's in the proposed deal – and what's not</h5>
+            </div>
+        </div>
+    </div>
+
+        <!-- (Next Layout) -->
+        <style>
+          .logo span{
+            font-weight: bold;
+            font-size: 77px;
+            color: red;
+          }
+            .second {
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                gap: 20px;
+                max-width: 1200px;
+                margin: 20px auto;
+                border-top: 1px solid lightgray;
+                border-right: 1px solid lightgray;
+                border-left: 1px solid lightgray;
+            }
+            .goodbadnews img, .side-badnews img {
+                width: 100%;
+                height: auto;
+                
+            }
+            .goodbadnews h3 {
+                font-size: 1px;
+                color: #333;
+                margin: 10px 0;
+                font-weight: bold;
+                text-decoration: solid;
+            }
+            
+            .side-badnews h3 {
+                font-size: 10px;
+                color: #333;
+                margin: 10px 0;
+                font-weight: bold;
+                text-decoration: solid;
+                }
+
+            .goodbadnews img{
+                border-top: 1px solid lightgray;
+                border-bottom: 1px solid lightgray;
+
+            }
+            .goodbadnews p, .side-badnews p {
+                font-size: 12px;
+                color: #666;
+                font-weight: bold;
+                margin: 5px 0;
+
+            }
+            .category {
+                font-weight: bold;
+                color: red;
+            }
+            .badnews h3{
+                font-size: 16px;
+                font-weight: bold;
+            }
+        </style>
+
+    
+        <div class="second">
+            <div class="goodbadnews">
+                <img src="C:\Users\lenovo\Documents\viora4\blogs\latest\Allblogs\web home\Screenshot 2025-03-14 114712.png" alt="Columbia River">
+                <p class="category">America</p>
+                <h4>Greenland rejects U.S. annexation</h4>
+                <p>Outgoing Prime Minister Mute Egede says ‘disrespect’ for Greenland must stop as US president again says he wants Arctic island.
+
+                </p>
+            </div>
+            <div class="badnews">
+                <p class="category">Champions League</p>
+                <h3>Real Madrid send rivals Atlético packing after controversial penalty shootout</h3>
+             <hr>   
+                <p class="category">Israel</p>
+                <h3>‘Absolute fear’: Israeli hostage describes abuse during 505-day Hamas captivity</h3>
+                <hr>
+                <p class="category">Syria</p>
+                <h3>Israel to occupy Syrian southern territory for ‘unlimited time’</h3>
+                <hr>
+
+                <p class="category">Ecuador</p>
+                <h3>Ecuador enlists founder of Blackwater private army as ally in ‘war’ on crime</h3>
+            </div>
+        </div>        
+<hr>
+<!-- new layout -->    <style>
+        
+        .badnewss {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2px;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 2px;
+            border-top: 1px solid #ccc;
+            border-left: 1px solid lightgray;
+            border-right: 1px solid lightgray;
+
+        }
+
+        .badmain {
+            display: grid;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            border-left: 1px solid lightgray;  
+            border-bottom: 1px solid lightgray;
+            border-top: 1px solid lightgray;
+            border-right: 1px solid lightgray;      }
+       
+        .badmain img{
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            width: 150px;
+            float: center;
+            width:  100px;
+            height: 100px;
+            object-fit: cover;
+            border-right:1px solid lightgray ;
+            
+
+        }
+        .goodmain img, .sidegood img {
+            width: 60%;
+            height: auto;
+            display: block;
+            padding-bottom: 10px;
+            border-bottom: 1px solid lightgray;
+
+            margin-bottom: 10px;
+        }
+        .goodmain h4, .sidegood h4, .badmain h4 {
+            font-size: 14px;
+            color: #333;
+            margin: 10px 0;
+        }
+        .goodmain p, .sidegood p, .badmain p {
+            font-size: 16px;
+            color: #043a53;
+            margin: 5px 0;
+            padding: 2px;
+            margin-left: 5px;
+            
+
+
+        }
+        .cat p{
+            border-right:1px solid lightgray ;
+
+            font-weight: bold;
+            color: rgb(17, 0, 255);
+        }
+        .badmain {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap:0px;
+
+        }
+        .sidegood{
+            border-left: 1px solid lightgray;
+            border-bottom: 1px solid lightgray;
+        }
+    
+    </style>
+</head>
+    <div class ="badnewss">
+        <div class="goodmain">
+            <img src="C:\Users\lenovo\Documents\viora4\blogs\latest\Allblogs\web home\2.png" alt="Trump Economic Strategy">
+<p class="cat">Opinion</p>
+            <h4>It’s ‘Maganomics’: Trump’s brash economic strategy is likely to end in crash or crisis</h4>
+            <p>Large tax cuts for the rich, import tariffs, and competing interests of Republican nationalists and the techno-right is a dangerous combination, says economist Jonathan Portes.</p>
+        </div>
+        <div class="sidegood">
+            <img src="C:\Users\lenovo\Documents\viora4\blogs\latest\Allblogs\web home\3.png" alt="Stocks Market">
+            <p class="cat">America</p>
+            <h4>Stocks tank and egg prices soar under Trump</h4>
+            <p>Lloyd Green</p>
+        </div>
+    </div>
+    <div class="badmain">
+        <div>
+            <img src="C:\Users\lenovo\Documents\viora4\blogs\latest\Allblogs\web home\4.png" alt="US Europe Relations">
+            <p class="cat">VIORA4 View</p>
+            <h4>Britain prosperity vs poverty
+            </h4><p>Editor</p>
+        </div>
+        <div>
+            <img src="C:\Users\lenovo\Documents\viora4\blogs\latest\Allblogs\web home\7.png" alt="Protest">
+            <p class="cat">Politics</p>
+            <h4>Trump is using antisemitism as a pretext for a war on the first amendment</h4>
+            <p>Judith Levine</p>
+        </div>
+        <div>
+            <img src="C:\Users\lenovo\Documents\viora4\blogs\latest\Allblogs\web home\5.png" alt="Matt LeBlanc">
+            <p class="cat">Culture</p>
+            <h4>The US’s plutocrats and politicians want more, more, more. Matt LeBlanc shows us a better way</h4>
+            <p>Arwa Mahdawi</p>
+        </div>
+        <div>
+            <img src="C:\Users\lenovo\Documents\viora4\blogs\latest\Allblogs\web home\6.png" alt="FIFA Trump">
+            <p class="cat">Sports</p>
+            <h4>Ruben Amorim on Bruno Fernandes
+            </h4>
+            <p>Bruno Fernandes criticism
+            </p>
+        </div>
+    </div><hr>
+    <!--new  layout-->
+    <style>
+     
+        .culture {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            max-width: 1200px;
+            margin: auto;
+            gap: 20px;
+            border-left: 1px solid lightgrey;
+            border-top: 1px solid lightgrey;
+            border-bottom: 1px solid lightgrey;
+            border-right: 1px solid lightgrey;
+
+
+        }.culture h1{
+
+        }
+        .culturenews {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 20px;
+
+        }
+        .culturenews img {
+            width: 60%;
+            height: auto;
+        }
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .cultureitem img {
+            width: 60%;
+            height: auto;
+            display: block;
+            width:  170px;
+            height: 170px;
+            object-fit: cover;
+            
+
+        }
+        
+        h4 {
+            font-size: 14px;
+            margin: 10px 0;
+            color: #000;
+            font-weight: bold;
+            border-right: 1px solid lightgrey;
+
+            
+        }
+        p {
+            color: #666;
+            font-size: 12px;
+
+
+        }
+        .culturecategory {
+            font-weight: bold;
+            color: #c00;
+            text-transform: uppercase;
+
+        }
+        
+        
+        
+
+    </style>
+</head>
+    <div class="culture">
+        <h1>Culture</h1>
+        <div>
+            <div class="culturenews">
+                <div>
+                    <p class="culturecategory">The White Lotus</p>
+                    <h4>Who Will Die in The White Lotus Season 3? We’ve Got Some Guesses
+                    </h4>
+                    <p>At long last, we've checked in to The White Lotus for our third stay at the obscenely luxe hotel chain, this time in Thailand</p>
+                </div>
+                <img src="C:\Users\lenovo\Documents\viora4\blogs\latest\Allblogs\web home\14.png" alt="The White Lotus">
+            </div>
+            <div class="news-grid">
+                <div class="cultureitem">
+                    <img src="C:\Users\lenovo\Documents\viora4\blogs\latest\Allblogs\web home\8.png" alt="Film">
+                    <p class="culturecategory">Film</p>
+                    <h4>Richard Osman book adaptation.Richard Osman's mystery series about four pensioners solving crimes is being adapted into a film by Steven Spielberg's Amblin Entertainment
+                    </h4>
+                </div>
+                <div class="cultureitem">
+                    <img src="C:\Users\lenovo\Documents\viora4\blogs\latest\Allblogs\web home\10.png" alt="Art and Design">
+                    <p class="culturecategory">Art and Design</p>
+                    <h4>Singing Butler painter Jack Vettriano dies aged 73
+                    </h4>
+                </div>
+                <div class="cultureitem">
+                    <img src="C:\Users\lenovo\Documents\viora4\blogs\latest\Allblogs\web home\11.png" alt="Film">
+                    <p class="culturecategory">Film</p>
+                    <h4>Brutalist composer Daniel Blumberg on the Oscars and his biggest win</h4>
+                </div>
+                <div class="cultureitem">
+                    <img src="C:\Users\lenovo\Documents\viora4\blogs\latest\Allblogs\web home\9.png" alt="Books">
+                    <p class="culturecategory">Books</p>
+                    <h4>Words of Radiance Brandon Sandersonhe must protect the king and Dalinar from every common peril as well as the distinctly uncommon threat of the Assassin</h4>
+                </div>
+
+                <div class="cultureitem">
+                    <img src="C:\Users\lenovo\Documents\viora4\blogs\latest\Allblogs\web home\12.png" alt="Books">
+                    <p class="culturecategory">BOOK</p>
+                    <h4>Parents' Guide to
+                        Goodnight Moon</h4>
+                </div>
+                <div class="cultureitem">
+                    <img src="C:\Users\lenovo\Documents\viora4\blogs\latest\Allblogs\web home\13.png" alt="Books">
+                    <p class="culturecategory">FILM</p>
+                    <h4>Mickey 17, known as an "expendable," goes on a dangerous journey to colonize an ice planet.</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+<hr>
+<!--new layout-->
+ <title>Podcasts Section</title>
+    <style>
+    
+        .podcasts-container {
+            max-width: 1200px;
+            margin: auto;
+            position: relative;
+            margin-top:80px ;
+            border-top: 1px solid lightgrey;
+            border-left: 1px solid lightgrey;
+            border-right: 1px solid lightgrey;
+            border-bottom: 1px solid lightgrey;
+
+
+
+
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .podcasts-wrapper {
+            overflow: hidden;
+            position: relative;
+            margin-left: 20%;
+        }
+        .podcasts-slider {
+            display: flex;
+            gap: 15px;
+            width: calc(280px * 6 + 15px * 5);
+            transition: transform 0.5s ease-in-out;
+        }
+        .podcast-item {
+            flex: 0 0 280px;
+            white-space: normal;
+        }
+        .podcast-item img {
+            width: 80%;
+            height: 30%;
+            object-fit: cover; 
+
+        }
+        .category {
+            font-weight: bold;
+            color: #0077cc;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        .podcast-item h4 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .podcast-meta {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            color: #666;
+        }
+        .podcast-meta img {
+            width: 20px;
+            margin-right: 5px;
+        }
+        .nav-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #000;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 10;
+        }
+        .prev {
+            left: 0;
+            margin-left: 15%;
+        }
+        .next {
+            right: 0;
+        }
+    </style>
+</head>
+
+    <div class="podcasts-container">
+        <h1>Podcasts</h1>
+        <button class="nav-button prev" onclick="scrollSlider(-1)">&#9665;</button>
+        <div class="podcasts-wrapper">
+            <div class="podcasts-slider" id="slider">
+                <div class="podcast-item">
+                    <img src="C:\Users\lenovo\Documents\viora4\blogs\latest\Allblogs\web home\15.png" alt="Liverpool Podcast">
+                    <p class="category">Football Weekly</p>
+                    <h4>Liverpool dumped out by perfect PSG after Anfield thriller</h4>
+                    <div class="podcast-meta">
+                        <img src="audio-icon.png" alt="Audio"> 17h ago
+                    </div>
+                </div>
+                <div class="podcast-item">
+                    <img src="C:\Users\lenovo\Documents\viora4\blogs\latest\Allblogs\web home\16.png" alt="Atlanticism Podcast">
+                    <p class="category">F1 Car</p>
+                    <h4>Lewis Hamilton’s intriguing analysis of ‘different’ Ferrari F1 car
+                    </h4>
+                    <div class="podcast-meta">
+                        <img src="C:\Users\lenovo\Documents\viora4\blogs\latest\Allblogs\web home\" alt="Audio"> 1d ago
+                    </div>
+                </div>
+                <div class="podcast-item">
+                    <img src="C:\Users\lenovo\Documents\viora4\blogs\latest\Allblogs\web home\21.png" alt="Canada Podcast">
+                    <p class="category">Crime</p>
+                    <h4>Murdered schoolgirl’s father pleads with K-pop star Jang Won-young to attend funeral
+                    </h4>
+                    <div class="podcast-meta">
+                        <img src="audio-icon.png" alt="Audio"> 1d ago
+                    </div>
+                </div>
+                <div class="podcast-item">
+                    <img src="C:\Users\lenovo\Documents\viora4\blogs\latest\Allblogs\web home\22.png" alt="FA Cup Podcast">
+                    <p class="category">Politics</p>
+                    <h4>Ukrainians in US, pickup politics, Mexico’s judicial elections and DEI
+
+                    </h4>
+                    <div class="podcast-meta">
+                        <img src="audio-icon.png" alt="Audio"> 2d ago
+                    </div>
+                </div>
+                <div class="podcast-item">
+                    <img src="C:\Users\lenovo\Documents\viora4\blogs\latest\Allblogs\web home\20.png" alt="Music Podcast">
+                    <p class="category">Music Weekly</p>
+                    <h4>K-pop singer Wheesung found dead at home aged 43
+                    </h4>
+                    <div class="podcast-meta">
+                        <img src="audio-icon.png" alt="Audio"> 3d ago
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <button class="nav-button next" onclick="scrollSlider(1)">&#9655;</button>
+    </div>
+    <script>
+        let index = 0;
+        const totalItems = 6;
+        const visibleItems = 4;
+        const itemWidth = 295;
+        function scrollSlider(direction) {
+            index += direction;
+            if (index < 0) index = 0;
+            if (index > totalItems - visibleItems) index = totalItems - visibleItems;
+            document.getElementById('slider').style.transform = `translateX(-${index * itemWidth}px)`;
+        }
+    </script>
+    <hr>
+
+<!--NEW LAYOUT-->
+<style>
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 30pxpx;
+        border-top: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+        border-left: 1px solid lightgray;
+        border-right: 1px solid lightgray;
+
+    }
+    h1 {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    .SPORTSPAGE-layout {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+        margin-left: 20%;
+    }
+    .main-SPORTSPAGE {
+        display: flex;
+        gap: 20px;
+        border-bottom:1px solid lightgray;
+        border-right:1px solid lightgray;
+
+    }
+    .main-SPORTSPAGE img {
+        
+        width:380px;
+        height:300px;
+        object-fit: cover;
+    }
+    .main-SPORTSPAGE-content h4 {
+        font-size: 22px;
+        margin: 10px 0;
+        border-right:1px solid rgb(194, 8, 8);
+
+    }
+    .secondary-SPORTSPAGE {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        border-bottom:1px solid lightgray;
+
+        border-left:1px solid lightgray;
+
+    }
+    .secondary-SPORTSPAGE img {
+    
+        
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+    .SPORTSPAGE-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin-top: 20px;
+        margin-left: 20%;
+    }
+    .SPORTSPAGE-item img {
+        width: 200px;
+        height: 150px;
+        object-fit: cover;
+    }
+    .SPORTSPAGE-item h3 {
+        font-size: 16px;
+        margin: 8px 0;
+        border-left:3px solid #c00;
+
+    }
+    .SPORTSCAT {
+        font-weight: bold;
+        color: #0077cc;
+        font-size: 14px;
+    }
+</style>
+</head>
+<body>
+
+<div class id="container">
+    <h1>Sport</h1>
+    <div class="SPORTSPAGE-layout">
+        <!-- Main SPORTSPAGE -->
+        <div class="main-SPORTSPAGE">
+            <img src="C:\Users\lenovo\Documents\viora4\blogs\latest\Allblogs\web home\30.png" alt="Main SPORTSPAGE">
+            <div class="main-SPORTSPAGE-content">
+                <p class="SPORTSCAT">Football</p>
+                <h4>Asensio double sinks 10-man Brugge as Aston Villa bulldoze into last eight</h4>
+                <p>After Kyriani Sabbe’s sending-off 16 minutes in, goals for Marco Asensio gave Aston Villa a 3-0 win over Club Brugge...</p>
+                <p><small>8h ago | 💬 115</small></p>
+            </div>
+        </div>
+
+        <!-- Side SPORTSPAGE -->
+        <div class="secondary-SPORTSPAGE">
+            <img src="C:\Users\lenovo\Documents\viora4\blogs\latest\Allblogs\web home\31.png" alt="Side SPORTSPAGE">
+            <p class="SPORTSCAT">Football</p>
+            <h3>Sterling makes mark against PSV as Arsenal stroll into quarter-finals</h3>
+            <p><small>8h ago | 💬 103</small></p>
+        </div>
+    </div>
+
+    <!-- SPORTSPAGE Grid -->
+    <div class="SPORTSPAGE-grid">
+        <div class="SPORTSPAGE-item">
+            <img src="C:\Users\lenovo\Documents\viora4\blogs\latest\Allblogs\web home\34.png" alt="SPORTSPAGE 1">
+            <p class="SPORTSCAT">Six Nations</p>
+            <h3>Borthwick may use three fly-halves for England’s finale in Wales</h3>
+            <p><small>11h ago</small></p>
+        </div>
+        <div class="SPORTSPAGE-item">
+            <img src="C:\Users\lenovo\Documents\viora4\blogs\latest\Allblogs\web home\35.png" alt="SPORTSPAGE 2">
+            <p class="SPORTSCAT">Cricket</p>
+            <h3>Warner joins London Spirit in men’s Hundred draft but Anderson snubbed</h3>
+            <p><small>10h ago</small></p>
+        </div>
+        <div class="SPORTSPAGE-item">
+            <img src="C:\Users\lenovo\Documents\viora4\blogs\latest\Allblogs\web home\32.png" alt="SPORTSPAGE 3">
+            <p class="SPORTSCAT">Horse Racing</p>
+            <h3>‘That’s for Michael’: Marine Nationale leads</h3>
+            <p><small>11h ago</small></p>
+        </div>
+        <div class="SPORTSPAGE-item">
+            <img src="C:\Users\lenovo\Documents\viora4\blogs\latest\Allblogs\web home\33.png" alt="SPORTSPAGE 4">
+            <p class="SPORTSCAT">Formula One</p>
+            <h3>Team-by-team guide to the cars and drivers in 2024</h3>
+            <p><small>9h ago</small></p>
+        </div>
+    </div>
+</div>
+<!--Newlayout-->
+<style>
+        .popular {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20vh;
+        border-top: 3px solid black;
+        padding-top: 15px;
+        border-bottom: 1px solid lightgray;
+        border-top: 1px solid lightgray;
+        border-right: 1px solid lightgray;
+        border-left: 1px solid lightgray;
+
+    }
+    h1 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        
+    }
+    .popular-news {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 20px;
+        margin-left:;
+    }
+    .popular-news h4 {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    .popular-news p {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 10px;
+        text-align: center;
+
+    }
+    .news-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+    .news-item {
+        display: grid;
+        grid-template-columns: 40px 1fr;
+        gap: 10px;
+        align-items: start;
+        padding: 10px 0;
+        border-bottom: 1px solid #ddd;
+    }
+    .news-item:last-child {
+        border-bottom: none;
+    }
+    .news-item .number {
+        font-size: 24px;
+        font-weight: bold;
+        color: rgb(33, 102, 148);
+    }
+    .news-item p {
+        font-size: 16px;
+        margin: 0;
+    }
+    .news-item .highlight {
+        color: #cc0000;
+        font-weight: bold;
+    }
+</style>
+
+<div class="popular">
+    <h1>Most popular</h1>
+    <div class="popular-news">
+        <div>
+            <h4>Most viewed</h4>
+            <p>What readers are clicking on</p>
+        </div>
+        <div>
+            <h4>Deeply read</h4>
+            <p>What readers are spending time with</p>
+        </div>
+    </div>
+
+    <div class="news-list">
+        <!-- Most Viewed Column -->
+        <div>
+            <div class="news-item">
+                <div class="number">1</div>
+                <p>Trump accuses Ireland of stealing US companies in meeting with taoiseach</p>
+            </div>
+            <div class="news-item">
+                <div class="number">2</div>
+                <p>US envoy to visit Moscow amid ceasefire talks - as it happened</p>
+            </div>
+            <div class="news-item">
+                <div class="number">3</div>
+                <p>Rubio says Trump’s ‘51st state’ plan not on G7 summit agenda in Canada</p>
+            </div>
+            <div class="news-item">
+                <div class="number">4</div>
+                <p>‘Absolute fear’: Israeli hostage describes abuse during 505-day Hamas captivity</p>
+            </div>
+            <div class="news-item">
+                <div class="number">5</div>
+                <p>Trump hints at financial repercussions if Russia rejects Ukraine ceasefire</p>
+            </div>
+            <div class="news-item">
+                <div class="number">6</div>
+                <p>US pauses water-sharing negotiations with Canada over Columbia River</p>
+            </div>
+        </div>
+
+        <!-- Deeply Read Column -->
+        <div>
+            <div class="news-item">
+                <div class="number">1</div>
+                <p><span class="highlight">“</span> The fruit of flattery is tariffs, but Trump-wrangler Starmer takes it on the chin</p>
+            </div>
+            <div class="news-item">
+                <div class="number">2</div>
+                <p><span class="highlight">“</span> Lean in, said Sheryl Sandberg - but after this week, can we ever see her or Facebook in the same light again?</p>
+            </div>
+            <div class="news-item">
+                <div class="number">3</div>
+                <p>We should love this India team but Champions Trophy felt a hollow triumph</p>
+            </div>
+            <div class="news-item">
+                <div class="number">4</div>
+                <p>Trump accuses Ireland of stealing US companies in meeting with taoiseach</p>
+            </div>
+            <div class="news-item">
+                <div class="number">5</div>
+                <p>US pauses water-sharing negotiations with Canada over Columbia River</p>
+            </div>
+            <div class="news-item">
+                <div class="number">6</div>
+                <p>‘Carers need care, too’: Bruce Willis’s wife speaks out after deaths of Gene Hackman and Betsy Arakawa</p>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+
+<!--new layut-->
+<style>
+    .climate {
+        max-width: 1200px;
+        margin: auto;
+        padding: 15px;
+        display: flex;
+        align-items: flex-start;
+        border-bottom: 1px solid lightgray;
+        border-top: 1px solid lightgray;
+        border-right: 1px solid lightgray;
+        border-left: 1px solid lightgray;
+
+    }
+    .climate-header {
+        font-size: 24px;
+        font-weight: bold;
+        margin-right: 20%;
+        white-space: nowrap;
+
+    }
+    .news-climate {
+        display: flex;
+        gap: 10px;
+        padding-bottom: 10px;
+        
+    }
+    .news-item img {
+        width: 10%;
+        
+        height: 10%;
+        object-fit: cover;
+        float:left;
+
+    }
+    .news-item h4 {
+        font-size: 13px;
+        margin: 5px 0;
+        font-weight: bold;
+        
+    }
+</style>
+
+<div class="climate">
+    <div class="climate-header">Climate crisis</div>
+
+    <div class="news-climate">
+        <div class="news-item">
+            <img src="C:\Users\lenovo\Documents\viora4\blogs\latest\Allblogs\web home\38.png" alt="Climate News 1">
+            <h4>US energy industry’s climate retreat is putting profits over people, advocates say</h4>
+        </div>
+
+        <div class="news-item">
+            <img src="C:\Users\lenovo\Documents\viora4\blogs\latest\Allblogs\web home\38.png" alt="Climate News 2">
+            <h4>Trump’s ‘drill, baby, drill’ agenda could keep the world hooked on oil and gas</h4>
+        </div>
+
+        <div class="news-item">
+            <img src="C:\Users\lenovo\Documents\viora4\blogs\latest\Allblogs\web home\38.png" alt="Climate News 3">
+            <h4>As countries scramble for minerals, the seabed beckons. Will mining it be a disaster?</h4>
+        </div>
+
+        <div class="news-item">
+            <img src="C:\Users\lenovo\Documents\viora4\blogs\latest\Allblogs\web home\38.png" alt="Climate News 4">
+            <h4>Kim Soo Hyun officially announced to file a lawsuit after Ga Se Yeon accused him of dating Kim Sae Ron from the age of 15 until her death.
+            </h4>
+        </div><hr>
+    </div>
+</div>
+<hr>
+<!-- Bootstrap JS (optional for other components) -->
+    <script src="C:\Users\lenovo\Documents\viora4\blogs\images\Screenshot 2025-03-13 015233.png"></script>
+    <script>function toggleMenu() {
+        document.querySelector(".nav-links").classList.toggle("show");
+    }
+    </script>
+    <!--footer-->
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .footer {
+            background: #2f2f2f;
+            color: #fff;
+            padding: 50px 20px;
+            line-height: 1.6;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .footer-section h3 {
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .footer-about p {
+            margin-bottom: 15px;
+        }
+
+        .newsletter-input {
+            display: flex;
+            margin-top: 15px;
+        }
+
+        .newsletter-input input {
+            padding: 10px;
+            border: none;
+            width: 70%;
+        }
+
+        .newsletter-input button {
+            padding: 10px 15px;
+            background: #007bff;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        .news-item {
+            margin-bottom: 20px;
+        }
+
+        .news-date {
+            color: #888;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        .footer-links {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            display: block;
+        }
+
+        .footer-links a:hover {
+            color: #fff;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid #444;
+            color: #888;
+        }
+
+        @media (max-width: 768px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section footer-about">
+                <h3>About</h3>
+                <p>Viora4,Team<br>Delivering truth with precision, insight, and integrity—because every word shapes the world</p>
+                <p>+92 319 972 9298</p>
+                <p>mindmentor2025@gmail.com</p>
+                <div class="newsletter-input">
+                    <input type="email" placeholder="Enter email address">
+                    <button>Submit</button>
+                </div>
+            </div>
+
+            
+
+            <div class="footer-section">
+                <h3>Information</h3>
+                <div class="footer-links">
+                    <div>  
+<a href="#" class="active">All</a>
+<a href="https://viora4.netlify.app/">Home</a>
+<a href="https://viora4-news-blogs.netlify.app/">News</a>
+<a href="https://viora4-blogs.netlify.app/">Blogs</a>
+                                    <a href="https://viora4-latest.netlify.app/">Latest</a>
+
+<a href="https://nouman007pro.github.io/privacy.github.io/">Privacy</a>
+                    </div>
+                    <div>
+                        <a href="#">Help & Support</a>
+                        <a href="#instagram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright ©2025 All rights reserved.</p>
+            <p>This Website Created ♥ by viora4.netlify.app Team</p>
+        </div>
+    </footer>
+</body>
+</html>
