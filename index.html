@@ -216,16 +216,38 @@
             border-bottom: 1px solid lightgray;
         }
        @media (max-width: 600px) {
-        .badmaincolumn {
-            flex-direction: column; /* Stack items vertically */
-            gap: 15px;
-        }
-        .badmaincolumn div {
-            width: 100%; /* Full width for each article */
-            max-width: 100%;
-        }
+    .badnewss {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        gap: 15px;
     }
-    
+
+    .badmaincolumn {
+        display: flex;
+        flex-direction: column; /* Stack articles in one column */
+        gap: 15px;
+    }
+
+    .badmaincolumn div {
+        width: 100%; /* Make each article take full width */
+        max-width: 100%;
+    }
+
+    .badmaincolumn img {
+        width: 100px; /* Keep image size consistent */
+        height: 100px;
+        object-fit: cover;
+    }
+
+    .goodmaincolumn img,
+    .sidegood img {
+        width: 100%; /* Full width images */
+    }
+
+    .sidegood {
+        border-left: none; /* Remove left border for mobile */
+    }
+}
     </style>
 </head>
     <div class="badnewss">
