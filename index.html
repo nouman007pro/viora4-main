@@ -215,6 +215,16 @@
             border-left: 1px solid lightgray;
             border-bottom: 1px solid lightgray;
         }
+       @media (max-width: 600px) {
+        .badmaincolumn {
+            flex-direction: column; /* Stack items vertically */
+            gap: 15px;
+        }
+        .badmaincolumn div {
+            width: 100%; /* Full width for each article */
+            max-width: 100%;
+        }
+    }
     
     </style>
 </head>
