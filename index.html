@@ -51,39 +51,82 @@
                 <h1>Headlines</h1>
             </div>
 
-            <!-- Main News Section -->
-            <div class="col-md-6 main-news">
-                <div class="news-content">
-                    <span class=""></span>
-                   
-                   <strong> <p>Russian president makes threats in first visit since Ukrainian incursion as world waits for Kremlin's reaction to ceasefire proposal.</p></strong>
-                    <span class="time">54m ago</span>
-                </div>
-                <div class="news-image">
-                    <img src="C:\Users\lenovo\Documents\viora4\blogs\images\Screenshot 2025-03-13 015233.png" alt="Putin" class="img-fluid">
-                </div>
-            </div>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 15px;
+            padding: 20px;
+        }
+        .main-news {
+            grid-column: span 2;
+        }
+        .main-news img {
+            width: 100%;
+            height: auto;
+        }
+        .main-news h2 {
+            margin-top: 10px;
+        }
+        .news-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        .news-item img {
+            width: 100%;
+            height: auto;
+        }
+        .news-item h3 {
+            margin-top: 5px;
+        }
 
-            <!-- Right Side (Additional News) -->
-    
-            <div class="col-md-3 side-news">
-                <img src="C:\Users\lenovo\Documents\viora4\blogs\images\Screenshot 2025-03-13 063136.png" alt="Pollution" class="img-fluid">
-                <span class="category">Climate crisis</span>
-                <h4>US officials reconsider greenhouse gas harm amid slew of environmental rollbacks</h4>
-                <span class="time">1h ago</span>
-            </div>
+        @media (max-width: 600px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+            }
+            .news-grid {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+            .news-item {
+                text-align: center;
+            }
+            .main-news h2, .news-item h3 {
+                font-size: 16px;
+            }
+        }
+    </style>
+
+    <div class="container">
+        <div class="main-news">
+            <img src="head.png" alt="Main News Image">
+            <h2>UK prime minister says Putin cannot be allowed to 'play games' over Ukraine ceasefire</h2>
         </div>
-
-        <!-- Bottom News Section -->
-        <div class="row bottom-news mt-3">
-            <div class="col-md-4">
-                <h5><span class="full-report">Full report</span> Trump hints at financial repercussions if Russia rejects Ukraine ceasefire</h5>
+        <div class="news-grid">
+            <div class="news-item">
+                <img src="trump.png" alt="News Image">
+                <h3>Putin praises Trump for 'doing everything' to improve US-Russia relations</h3>
             </div>
-            <div class="col-md-4">
-                <h5><span class="analysis">Analysis</span> Cautious Zelensky keeps cards close to his chest after Ukraine ceasefire proposal</h5>
+            <div class="news-item">
+                <img src="space.png" alt="News Image">
+                <h3>Crew lifts off on SpaceX mission to replace stuck NASA astronauts</h3>
             </div>
-            <div class="col-md-4">
-                <h5><span class="explainer">Explainer</span> Ukraine ceasefire: what's in the proposed deal – and what's not</h5>
+            <div class="news-item">
+                <img src="southafrica.png" alt="News Image">
+                <h3>Marco Rubio says South Africa's ambassador to US is 'no longer welcome'</h3>
+            </div>
+            <div class="news-item">
+                <img src="australia.png" alt="News Image">
+                <h3>Baby wombat-snatching US influencer apologises and says she was 'concerned' for the animal</h3>
             </div>
         </div>
     </div>
