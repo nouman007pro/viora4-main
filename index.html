@@ -660,158 +660,124 @@
 
 <!--NEW LAYOUT-->
 <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        maincolumncol {
-            max-width: 1200px;
-            margin: auto;
-            padding: 30px;
-            border: 1px solid lightgray;
-        }
-        h1 {
-            font-size: 28px;
-            font-weight: bold;
-            margin-bottom: 15px;
-        }
-        .SPORTSPAGE-layout {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 20px;
-            margin-left: 20%;
-        }
-        .maincolumn-SPORTSPAGE {
-            display: flex;
-            gap: 20px;
-            border-bottom: 1px solid lightgray;
-            border-right: 1px solid lightgray;
-        }
-        .maincolumn-SPORTSPAGE img {
-            width: 380px;
-            height: 300px;
-            object-fit: cover;
-        }
-        .maincolumn-SPORTSPAGE-content h4 {
-            font-size: 22px;
-            margin: 10px 0;
-            border-right: 1px solid rgb(194, 8, 8);
-        }
-        .secondary-SPORTSPAGE {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            border-bottom: 1px solid lightgray;
-            border-left: 1px solid lightgray;
-        }
-        .secondary-SPORTSPAGE img {
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
-        }
-        .SPORTSPAGE-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-            margin-top: 20px;
-            margin-left: 20%;
-        }
-        .SPORTSPAGE-item img {
-            width: 200px;
-            height: 150px;
-            object-fit: cover;
-        }
-        .SPORTSPAGE-item h3 {
-            font-size: 16px;
-            margin: 8px 0;
-            border-left: 3px solid #c00;
-        }
-        .SPORTSCAT {
-            font-weight: bold;
-            color: #0077cc;
-            font-size: 14px;
-        }
-        @media (max-width: 600px) {
-            maincolumncol {
-                width: 100%;
-                padding: 10px;
-            }
-            .SPORTSPAGE-layout {
-                display: flex;
-                flex-direction: column;
-                gap: 15px;
-                margin-left: 0;
-            }
-            .maincolumn-SPORTSPAGE {
-                flex-direction: column;
-                align-items: center;
-            }
-            .maincolumn-SPORTSPAGE img {
-                width: 100%;
-                height: auto;
-            }
-            .secondary-SPORTSPAGE img {
-                width: 100%;
-                height: auto;
-            }
-            .SPORTSPAGE-grid {
-                grid-template-columns: 1fr;
-                margin-left: 0;
-            }
-        }
-    </style>
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 30pxpx;
+        border-top: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+        border-left: 1px solid lightgray;
+        border-right: 1px solid lightgray;
+
+    }
+    h1 {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    .SPORTSPAGE-layout {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+        margin-left: 20%;
+    }
+    .main-SPORTSPAGE {
+        display: flex;
+        gap: 20px;
+
+    }
+    .main-SPORTSPAGE img {
+        width: 300px;
+        height: auto;
+    }
+    .main-SPORTSPAGE-content h4 {
+        font-size: 22px;
+        margin: 10px 0;
+    }
+    .secondary-SPORTSPAGE {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .secondary-SPORTSPAGE img {
+        width: 100%;
+        height: auto;
+    }
+    .SPORTSPAGE-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin-top: 20px;
+        margin-left: 20%;
+    }
+    .SPORTSPAGE-item img {
+        width: 100%;
+        height: auto;
+    }
+    .SPORTSPAGE-item h3 {
+        font-size: 16px;
+        margin: 8px 0;
+    }
+    .SPORTSCAT {
+        font-weight: bold;
+        color: #0077cc;
+        font-size: 14px;
+    }
+</style>
 </head>
 <body>
-    <div class="container">
-        <h1>Sport</h1>
-        <div class="SPORTSPAGE-layout">
-            <div class="maincolumn-SPORTSPAGE">
-                <img src="images/30.png" alt="maincolumn SPORTSPAGE">
-                <div class="maincolumn-SPORTSPAGE-content">
-                    <p class="SPORTSCAT">Football</p>
-                    <h4>Asensio double sinks 10-man Brugge as Aston Villa bulldoze into last eight</h4>
-                    <p>After Kyriani Sabbe’s sending-off 16 minutes in, goals for Marco Asensio gave Aston Villa a 3-0 win over Club Brugge...</p>
-                    <p><small>8h ago | 💬 115</small></p>
-                </div>
-            </div>
-            <div class="secondary-SPORTSPAGE">
-                <img src="images/31.png" alt="Side SPORTSPAGE">
+
+<div class="container">
+    <h1>Sport</h1>
+    <div class="SPORTSPAGE-layout">
+        <!-- Main SPORTSPAGE -->
+        <div class="main-SPORTSPAGE">
+            <img src="main-SPORTSPAGE.jpg" alt="Main SPORTSPAGE">
+            <div class="main-SPORTSPAGE-content">
                 <p class="SPORTSCAT">Football</p>
-                <h3>Sterling makes mark against PSV as Arsenal stroll into quarter-finals</h3>
-                <p><small>8h ago | 💬 103</small></p>
+                <h4>Asensio double sinks 10-man Brugge as Aston Villa bulldoze into last eight</h4>
+                <p>After Kyriani Sabbe’s sending-off 16 minutes in, goals for Marco Asensio gave Aston Villa a 3-0 win over Club Brugge...</p>
+                <p><small>8h ago | 💬 115</small></p>
             </div>
         </div>
-        <div class="SPORTSPAGE-grid">
-            <div class="SPORTSPAGE-item">
-                <img src="images/34.png" alt="SPORTSPAGE 1">
-                <p class="SPORTSCAT">Six Nations</p>
-                <h3>Borthwick may use three fly-halves for England’s finale in Wales</h3>
-                <p><small>11h ago</small></p>
-            </div>
-            <div class="SPORTSPAGE-item">
-                <img src="images/35.png" alt="SPORTSPAGE 2">
-                <p class="SPORTSCAT">Cricket</p>
-                <h3>Warner joins London Spirit in men’s Hundred draft but Anderson snubbed</h3>
-                <p><small>10h ago</small></p>
-            </div>
-            <div class="SPORTSPAGE-item">
-                <img src="images/32.png" alt="SPORTSPAGE 3">
-                <p class="SPORTSCAT">Horse Racing</p>
-                <h3>‘That’s for Michael’: Marine Nationale leads</h3>
-                <p><small>11h ago</small></p>
-            </div>
-            <div class="SPORTSPAGE-item">
-                <img src="images/33.png" alt="SPORTSPAGE 4">
-                <p class="SPORTSCAT">Formula One</p>
-                <h3>Team-by-team guide to the cars and drivers in 2024</h3>
-                <p><small>9h ago</small></p>
-            </div>
+
+        <!-- Side SPORTSPAGE -->
+        <div class="secondary-SPORTSPAGE">
+            <img src="side-SPORTSPAGE.jpg" alt="Side SPORTSPAGE">
+            <p class="SPORTSCAT">Football</p>
+            <h3>Sterling makes mark against PSV as Arsenal stroll into quarter-finals</h3>
+            <p><small>8h ago | 💬 103</small></p>
         </div>
     </div>
-</body>
-</html>
 
-<!--Newlayout-->
+    <!-- SPORTSPAGE Grid -->
+    <div class="SPORTSPAGE-grid">
+        <div class="SPORTSPAGE-item">
+            <img src="SPORTSPAGE1.jpg" alt="SPORTSPAGE 1">
+            <p class="SPORTSCAT">Six Nations</p>
+            <h3>Borthwick may use three fly-halves for England’s finale in Wales</h3>
+            <p><small>11h ago</small></p>
+        </div>
+        <div class="SPORTSPAGE-item">
+            <img src="SPORTSPAGE2.jpg" alt="SPORTSPAGE 2">
+            <p class="SPORTSCAT">Cricket</p>
+            <h3>Warner joins London Spirit in men’s Hundred draft but Anderson snubbed</h3>
+            <p><small>10h ago</small></p>
+        </div>
+        <div class="SPORTSPAGE-item">
+            <img src="SPORTSPAGE3.jpg" alt="SPORTSPAGE 3">
+            <p class="SPORTSCAT">Horse Racing</p>
+            <h3>‘That’s for Michael’: Marine Nationale leads</h3>
+            <p><small>11h ago</small></p>
+        </div>
+        <div class="SPORTSPAGE-item">
+            <img src="SPORTSPAGE4.jpg" alt="SPORTSPAGE 4">
+            <p class="SPORTSCAT">Formula One</p>
+            <h3>Team-by-team guide to the cars and drivers in 2024</h3>
+            <p><small>9h ago</small></p>
+        </div>
+    </div>
+</div>
     <style>
         .popular {
             max-width: 1200px;
