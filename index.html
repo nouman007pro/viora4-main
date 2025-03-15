@@ -201,7 +201,7 @@
 
         }
         .cat p{
-            border-right:1px solid lightgray ;
+            border-left:1px solid lightgray ;
 
             font-weight: bold;
             color: rgb(17, 0, 255);
@@ -250,7 +250,6 @@
     }
 }
     </style>
-</head>
     <div class="badnewss">
         <div class="goodmaincolumn">
             <img src="images/2.png" alt="Trump Economic Strategy">
@@ -294,12 +293,6 @@
         </div>
     </div><hr>
     <!--new  layout-->
-   <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Culture News</title>
     <style>
         /* Desktop Styles */
         .culture {
@@ -363,12 +356,15 @@
                 padding: 15px;
                 border: none;
                 background-color: #f9f9f9;
+                padding-top: 6px;
             }
             .culture h1 {
                 font-size: 22px;
-                text-align: center;
+                text-align: left;
                 color: #333;
                 margin-bottom: 10px;
+                border-bottom: 1px solid lightgray;
+
             }
             .culturenews {
                 display: block;
@@ -413,8 +409,7 @@
             }
         }
     </style>
-</head>
-<body>
+
     <div class="culture">
         <h1>Culture</h1>
         <div>
@@ -461,8 +456,7 @@
             </div>
         </div>
     </div>
-</body>
-</html>
+
 <!--new layout-->
  <title>Podcasts Section</title>
     <style>
@@ -547,7 +541,6 @@
             right: 0;
         }
     </style>
-</head>
 
     <div class="podcasts-container">
         <h1>Podcasts</h1>
@@ -634,6 +627,7 @@
         font-size: 28px;
         font-weight: bold;
         margin-bottom: 15px;
+        border-bottom: 1px solid lightgray;
     }
     .SPORTSPAGE-layout {
         display: grid;
@@ -706,8 +700,6 @@
         }
     }
 </style>
-</head>
-<body>
 
 <div class="container">
     <h1>Sport</h1>
@@ -771,12 +763,14 @@
             border-top: 1px solid lightgray;
             border-right: 1px solid lightgray;
             border-left: 1px solid lightgray;
-        }
+margin-top: 6vh;        }
 
-        h1 {
+        .popular h1 {
+            border-bottom: 1px solid lightgray;
             font-size: 24px;
             font-weight: bold;
-            margin-bottom: 15px;
+            margin-bottom: 15px;text-align: left;
+            margin-left: -20px;
         }
 
         .popular-news {
@@ -853,6 +847,14 @@
             .popular {
                 padding: 5vh;
             }
+            .popular h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-align: left;
+            border-bottom: 1px solid lightgray;
+        }
+
 
             .popular-news {
                 display: flex;
@@ -904,8 +906,6 @@
             }
         }
     </style>
-</head>
-<body>
 
 <div class="popular">
     <h1>Most popular</h1>
@@ -982,10 +982,7 @@
 
 <!--new layut-->
     <style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 20px;
-    }
+    
     h2 {
         font-size: 24px;
         font-weight: bold;
@@ -998,6 +995,7 @@
         margin: auto;
         border: 1px solid lightgrey;
         padding: 20px;
+        margin-top: 6vh;
     }
     .article {
         max-width: 100%;
@@ -1014,8 +1012,9 @@
         text-transform: uppercase;
     }
     .title {
-        font-size: 18px;
+        font-size: 14px;
         font-weight: bold;
+        border-bottom: 1px solid lightgray;
     }
     .time {
         font-size: 12px;
@@ -1023,6 +1022,7 @@
     }
 
     @media (max-width: 600px) {
+
         .container {
             flex-direction: column;
             gap: 10px;
@@ -1037,10 +1037,9 @@
 </style>
 
 
-    </head>
-    <body>
-        <h2>Climate crisis</h2>
         <div class="container">
+            <h2>Climate Crisis</h2>
+
             <div class="article">
                 <img src="images/14.png" alt="Protest Image">
                 <div class="category">US</div>
@@ -1062,7 +1061,7 @@
                 <div class="category">Climate crisis</div>
                 <div class="title">‘Global weirding’: climate whiplash hitting world’s biggest cities, study reveals</div>
             </div>
-        </div>
+        </div><hr>
  
 <!-- Bootstrap JS (optional for other components) -->
     <script src="images/Screenshot 2025-03-13 015233.png"></script>
@@ -1073,11 +1072,11 @@
     <!--footer-->
 <style>    
     .footer {
-        background: #2f2f2f;
+        background:#012149;
         color: #fff;
         padding: 50px 20px;
         line-height: 1.6;
-    }
+width: 100%;    }
 
     .footer-content {
         max-width: 1200px;
