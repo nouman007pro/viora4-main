@@ -376,6 +376,7 @@
             object-fit: cover;
             display: block;
         }
+        
 
         h4 {
             font-size: 14px;
@@ -723,6 +724,28 @@
         color: #0077cc;
         font-size: 14px;
     }
+     /* Mobile Styles for Screens up to 600px */
+    @media screen and (max-width: 600px) {
+        .container {
+            padding: 20px;
+        }
+        .SPORTSPAGE-layout {
+            display: flex;
+            flex-direction: column;
+            margin-left: 0;
+        }
+        .main-SPORTSPAGE {
+            flex-direction: column;
+            align-items: center;
+        }
+        .main-SPORTSPAGE img {
+            width: 100%;
+        }
+        .SPORTSPAGE-grid {
+            grid-template-columns: 1fr;
+            margin-left: 0;
+        }
+    }
 </style>
 </head>
 <body>
@@ -732,7 +755,7 @@
     <div class="SPORTSPAGE-layout">
         <!-- Main SPORTSPAGE -->
         <div class="main-SPORTSPAGE">
-            <img src="main-SPORTSPAGE.jpg" alt="Main SPORTSPAGE">
+            <img src="main-images/30.png" alt="Main SPORTSPAGE">
             <div class="main-SPORTSPAGE-content">
                 <p class="SPORTSCAT">Football</p>
                 <h4>Asensio double sinks 10-man Brugge as Aston Villa bulldoze into last eight</h4>
@@ -743,7 +766,7 @@
 
         <!-- Side SPORTSPAGE -->
         <div class="secondary-SPORTSPAGE">
-            <img src="side-SPORTSPAGE.jpg" alt="Side SPORTSPAGE">
+            <img src="images/31.png" alt="Side SPORTSPAGE">
             <p class="SPORTSCAT">Football</p>
             <h3>Sterling makes mark against PSV as Arsenal stroll into quarter-finals</h3>
             <p><small>8h ago | 💬 103</small></p>
@@ -753,25 +776,25 @@
     <!-- SPORTSPAGE Grid -->
     <div class="SPORTSPAGE-grid">
         <div class="SPORTSPAGE-item">
-            <img src="SPORTSPAGE1.jpg" alt="SPORTSPAGE 1">
+            <img src="images/34.png" alt="SPORTSPAGE 1">
             <p class="SPORTSCAT">Six Nations</p>
             <h3>Borthwick may use three fly-halves for England’s finale in Wales</h3>
             <p><small>11h ago</small></p>
         </div>
         <div class="SPORTSPAGE-item">
-            <img src="SPORTSPAGE2.jpg" alt="SPORTSPAGE 2">
+            <img src="images/35.png" alt="SPORTSPAGE 2">
             <p class="SPORTSCAT">Cricket</p>
             <h3>Warner joins London Spirit in men’s Hundred draft but Anderson snubbed</h3>
             <p><small>10h ago</small></p>
         </div>
         <div class="SPORTSPAGE-item">
-            <img src="SPORTSPAGE3.jpg" alt="SPORTSPAGE 3">
+            <img src="images/32.png" alt="SPORTSPAGE 3">
             <p class="SPORTSCAT">Horse Racing</p>
-            <h3>‘That’s for Michael’: Marine Nationale leads</h3>
+            <h3>‘That’s for Michaeimages/32.pngl’: Marine Nationale leads</h3>
             <p><small>11h ago</small></p>
         </div>
         <div class="SPORTSPAGE-item">
-            <img src="SPORTSPAGE4.jpg" alt="SPORTSPAGE 4">
+            <img src="images/33.png" alt="SPORTSPAGE 4">
             <p class="SPORTSCAT">Formula One</p>
             <h3>Team-by-team guide to the cars and drivers in 2024</h3>
             <p><small>9h ago</small></p>
